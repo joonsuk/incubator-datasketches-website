@@ -12,71 +12,100 @@
  <p><b><h1>Apache DataSketches (Incubating)</h1></b></p>
  <p><b><h2>A software library of stochastic streaming algorithms</h2></b></p>
 </div>
+
 <div class="ds-text">
-    <p>Apache DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods.</p>
+    <p>Apache DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods.</p>
     <p>After 8 years of development and 5 years as in Open Source, we have begun the important migration from a stand-alone GitHub site to being a member of the Apache Software Foundation community. While we undergo this migration, we beg your patience.</p>
 </div>
 
 <div>
 <ul>
-<li>Please continue to use <a href="http://datasketches.github.io">DataSketches.GitHub.io</a> for all overview documentation and access to online-javadocs for the time being.</li>
+<li><p>Please continue to use <a href="http://datasketches.github.io">DataSketches.GitHub.io</a> for all overview documentation and access to online-javadocs for the time being. The <a href="http://datasketches.apache.org">datasketches.apache.org</a> website will be a placeholder until we have migrated our current community website from <a href="http://DataSketches.GitHub.io">DataSketches.GitHub.io</a>.</p></li>
+<li><p>Ways to contact us:</p>
 
-<li>Please continue to use our <a href="https://groups.google.com/forum/#!forum/sketches-user">Google-groups Forum</a> or the GitHub-issues on the specific repositories to bring issues or questions to our attention.</li>
+<ul>
+<li>We have two ASF <a href="http://the-ASF.slack.com">the-ASF.slack.com</a> slack channels:
 
-<li>Please continue to use the <a href="https://search.maven.org/classic/#search%7Cga%7C1%7Cg%3A%20com.yahoo.datasketches">Maven Central GroupID = "com.yahoo.datasketches"</a> to locate current and past release Jars until we have formal releases under Apache.</li>
+<ul>
+<li>datasketches -- general user questions</li>
+<li>datasketches-dev -- similar to our Apache <a href="mailto:dev@datasketches.apache.org">dev@datasketches.apache.org</a>, except more interactive, but not as easily searchable.</li>
+</ul></li>
+<li>For discussions about problems with any of our sketch repository components (core-java, core-cpp, Hive, Pig, Vector, Android, etc.)
 
-<li>The <a href="https://datasketches.apache.org">datasketches.apache.org</a> website will be a placeholder until we have migrated our current community website from 
-  <a href="http://datasketches.github.io">DataSketches.GitHub.io</a>. For detailed project information, please continue to visit 
-  <a href="http://datasketches.github.io">DataSketches.GitHub.io</a>.</li>
+<ul>
+<li><a href="https://groups.google.com/forum/#!forum/sketches-user">Google-groups forum</a></li>
+</ul></li>
 
-<li>As the repositories under GitHub.io/DataSketches migrate they will disapear from the the GitHub.com/DataSketches organization page. Please refer to this list be directed to the proper locations.</li>
+<li>For issues about a specific component, please open issues on the appropriate GitHub repository (listed below). </li>
+<li>If you wish to contribute to our sketch development please contact us on our development email list
 
-<li>Web Sites
-  <ul>
-  <li><a href="http://datasketches.github.io">Original Website</a></li>
-  <li><a href="http://datasketches.apache.org">New Website (not yet active)</a></li>
-  <li><a href="https://github.com/DataSketches/DataSketches.github.io">Original Website Source</a></li>
-  <li><a href="https://github.com/apache/incubator-datasketches">New Website Source</a></li>
-  </ul>
-</li>
+<ul>
+<li><a href="mailto:dev@datasketches.apache.org">dev@datasketches.apache.org</a> </li>
+</ul></li>
+</ul></li>
 
-<li>Java
-  <ul>
-  <li><a href="https://github.com/DataSketches/memory">memory</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-core">sketches-core</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-hive">sketches-hive</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-pig">sketches-pig</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-vector">sketches-vector</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-misc">sketches-misc</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-android">sketches-android</a></li>
-  <li><a href="https://github.com/DataSketches/characterization">characterization</a></li>
-  <li><a href="https://github.com/DataSketches/experimental">experimental</a></li>
-  </ul>
-</li>
+<li><p>Finding our code releases:</p>
 
-<li>C++
-  <ul>
-  <li><a href="https://github.com/DataSketches/sketches-core-cpp">sketches-core-cpp</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-postgres">sketches-postgres</a></li>
-  <li><a href="https://github.com/DataSketches/characterization-cpp">characterization-cpp</a></li>
-  <li><a href="https://github.com/DataSketches/experimental-cpp">experimental-cpp</a></li>
-  </ul>
-</li>
-  
-<li>Command Line
-  <ul>
-  <li><a href="https://github.com/DataSketches/homebrew-sketches-cmd">homebrew-sketches-cmd</a></li>
-  <li><a href="https://github.com/DataSketches/sketches-cmd">sketches-cmd</a></li>
-  <li><a href="https://github.com/DataSketches/homebrew-sketches">homebrew-sketches</a></li>
-  </ul>
-</li>
+<ul>
+<li>Apache releases (versions 1.X.X):
+<ul>
+<li>Zip source: <a href="https://dist.apache.org/repos/dist/release/incubator/datasketches/">dist.apache.org/repos/dist/release/incubator/datasketches/</a></li>
+<li>Jar Artifacts (Java only): <a href="https://repository.apache.org/#nexus-search;quick%7Edatasketches">repository.apache.org/#nexus-search;quick~datasketches</a></li>
+</ul></li>
+
+<li>Pre-Apache releases (versions 0.X.X)
+<ul>
+<li>Jar Artifacts (Java only): <a href="https://search.maven.org/classic/#search%7Cga%7C1%7Ccom.yahoo.datasketches">search.maven.org/classic/#search%7Cga%7C1%7Ccom.yahoo.datasketches</a></li>
+</ul></li>
+</ul></li>
+<li><p>As the repositories under GitHub.io/DataSketches migrate they will disapear from the the GitHub.com/DataSketches organization page. Please refer to this list be directed to the proper locations.</p></li>
+
+<li><p>Web Sites</p>
+<ul>
+<li><a href="http://DataSketches.GitHub.io">Original Website</a></li>
+<li><a href="http://datasketches.apache.org">New Website</a> (not yet active)</li>
+<li><a href="https://github.com/DataSketches/DataSketches.github.io">Original Website Source</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches">New Website Source</a></li>
+</ul></li>
+
+<li><p>Java </p>
+<ul>
+<li><a href="https://github.com/apache/incubator-datasketches-memory">memory now incubator-datasketches-memory</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches-java">sketches-core now incubator-datasketches-java</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches-hive">sketches-hive now incubator-datasketches-hive</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches-pig">sketches-pig now incubator-datasketches-pig</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches-vector">sketches-vector now incubator-datasketches-vector</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches-characterization">characterization now incubator-datasketches-characterization</a></li>
+</ul></li>
+
+<li><p>C++</p>
+<ul>
+<li><a href="https://github.com/apache/incubator-datasketches-cpp">sketches-core-cpp now incubator-datasketches-cpp</a></li>
+<li><a href="https://github.com/apache/incubator-datasketches-postgresql">sketches-postgres now incubator-datasketches-postgresql</a></li>
+</ul></li>
+
+<li><p>Java/C++/Python (the following may be moved to Apache later)</p>
+<ul>
+<li><a href="https://github.com/DataSketches/sketches-misc">sketches-misc</a></li>
+<li><a href="https://github.com/DataSketches/sketches-android">sketches-android</a></li>
+<li><a href="https://github.com/DataSketches/experimental">experimental</a></li>
+<li><a href="https://github.com/DataSketches/characterization-cpp">characterization-cpp</a></li>
+<li><a href="https://github.com/DataSketches/experimental-cpp">experimental-cpp</a></li>
+</ul></li>
+
+<li><p>Command Line (These may move to Apache later or replaced by Python) </p>
+<ul>
+<li><a href="https://github.com/DataSketches/homebrew-sketches-cmd">homebrew-sketches-cmd</a></li>
+<li><a href="https://github.com/DataSketches/sketches-cmd">sketches-cmd</a></li>
+<li><a href="https://github.com/DataSketches/homebrew-sketches">homebrew-sketches</a></li>
+</ul></li>
 </ul>
 </div>
- 
+
 <hr>
 
 <div  style="margin-bottom:40px;">
-  <p><i>Disclaimer:</i> Apache DataSketches is an effort undergoing incubation at <a href="https://www.apache.org/">The Apache Software Foundation (ASF)</a>, sponsored by the <a href="https://incubator.apache.org/">Apache Incubator</a>. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.</p>
+<p>Disclaimer: Apache DataSketches is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.</p>
 </div>
 
 </body>
